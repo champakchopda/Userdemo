@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "0296c7b0-d331-4e5d-82a7-a38aad4b805a",
+		"name": "Demoapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "test123",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "champak",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "chopda",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "champak12345@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "userphoto",
+							"type": "file",
+							"src": "/C:/Users/Vipul Rajgor/Downloads/user02.jpg"
+						},
+						{
+							"key": "mobileno",
+							"value": "9904556801",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getuserdata",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWMzN2IzOWIzYTY4ZjBkYjY5MjQ4NWUyNWJlYjdhMWUxNDIwMzE2ZWU3OGJlZTRhM2ExMDJlNzM0NDYzN2VkNDljNmRmZTIzMDg1OTExMzUiLCJpYXQiOjE2NDAyMzkyNzIsIm5iZiI6MTY0MDIzOTI3MiwiZXhwIjoxNjcxNzc1MjcyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.TK2V9Gf6hvibYT_2merjhImKEQVrSAi9qOzriXXt57IUNi2iX3LA_NtbmdhY4vrHu8ZprQBvdLZQSf-l_Um_avKmk8cYSyV3L7F8UliftKvtODP9Y4KCaHzs2ulCoRx0Z7H7A4UiYcGPmMwSs8MCD_o2_v7EnpaCuc5rDvl03X6JM2IhdKaeoSFhAi-4CtdvZjvhLGjhuDi2CCIQB1Jr1Z2wEzeXXusYC8FtOfTOZ-EOB4gmP9qcy5k69SbfF4huZ-ya7FBsi_H7v9iAiDijM2aWiQwThEEwms6_dKBjSO_SbPtEt2-z0NT1cc46AKFm6vsrHWyExckjwCGhsXyVenP1L6EHYr9WzZE6olUdlN69niIxQXDHsOMquQwNi8vlEmCeGBNJRpJc2ntmP27BXo00jgbXN-exo0S7uuhb4uf7n7J_Xuz1RaT5nuqWUuOtGboxMuOyGT_XkIFDVbrSvibQckYa1uVm3gO4C3R2B-WjUSwHqyCEjqs1VyVwAdSpYZ1aBZYzFAeo2gr-twzAiivxXj2LKkEc78S_-qHCNi0mCWvKRQ6ejFoIOOp4-8EAQYCRtK9FuxG2bYqwUUHyQt_tQkOQLUyM-illapUC2Ep0G4aWmozCMH8Jtl02vEWMGwrvKTmF693EPAIG2DR_-Sg_5uCOKun2g6Knj_Wxhow",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getuserdata",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getuserdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userupdate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWMzN2IzOWIzYTY4ZjBkYjY5MjQ4NWUyNWJlYjdhMWUxNDIwMzE2ZWU3OGJlZTRhM2ExMDJlNzM0NDYzN2VkNDljNmRmZTIzMDg1OTExMzUiLCJpYXQiOjE2NDAyMzkyNzIsIm5iZiI6MTY0MDIzOTI3MiwiZXhwIjoxNjcxNzc1MjcyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.TK2V9Gf6hvibYT_2merjhImKEQVrSAi9qOzriXXt57IUNi2iX3LA_NtbmdhY4vrHu8ZprQBvdLZQSf-l_Um_avKmk8cYSyV3L7F8UliftKvtODP9Y4KCaHzs2ulCoRx0Z7H7A4UiYcGPmMwSs8MCD_o2_v7EnpaCuc5rDvl03X6JM2IhdKaeoSFhAi-4CtdvZjvhLGjhuDi2CCIQB1Jr1Z2wEzeXXusYC8FtOfTOZ-EOB4gmP9qcy5k69SbfF4huZ-ya7FBsi_H7v9iAiDijM2aWiQwThEEwms6_dKBjSO_SbPtEt2-z0NT1cc46AKFm6vsrHWyExckjwCGhsXyVenP1L6EHYr9WzZE6olUdlN69niIxQXDHsOMquQwNi8vlEmCeGBNJRpJc2ntmP27BXo00jgbXN-exo0S7uuhb4uf7n7J_Xuz1RaT5nuqWUuOtGboxMuOyGT_XkIFDVbrSvibQckYa1uVm3gO4C3R2B-WjUSwHqyCEjqs1VyVwAdSpYZ1aBZYzFAeo2gr-twzAiivxXj2LKkEc78S_-qHCNi0mCWvKRQ6ejFoIOOp4-8EAQYCRtK9FuxG2bYqwUUHyQt_tQkOQLUyM-illapUC2Ep0G4aWmozCMH8Jtl02vEWMGwrvKTmF693EPAIG2DR_-Sg_5uCOKun2g6Knj_Wxhow",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "keyur",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "patel",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "keyur1243@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "userphoto",
+							"type": "file",
+							"src": "/C:/Users/Vipul Rajgor/Downloads/nphoto.png"
+						},
+						{
+							"key": "mobileno",
+							"value": "8585623625",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/userupdate/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"userupdate",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Userdelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGY3OTc2NzUwNmYzNjIwMzFlNGJlMGVmM2FhZTUyNjJmNTBjODZiM2YwNDgxODNlM2EwMGViZjM5ZDdlMjQzYmQ1ODk0NTFhMTk3ODIxOGMiLCJpYXQiOjE2NDAyNDYyODgsIm5iZiI6MTY0MDI0NjI4OCwiZXhwIjoxNjcxNzgyMjg4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZaZrT8UYCzuWNhdiwtrA4sqCjBMLgqyJNtfV2qGujKuSZ0UswrDPI6hqNjK1Vd_QhM4U_prrBh9jkOcrU04HGID0f91tr4jqOIEMYsT8q04OwzaCEWkBggj1fWhQ8fYXSyRzeLY2YKaoZjiKFh8t2A6AkXGDVAH6FjTUaGKvh1ipUhaEO3OzklscE2adH7sx5I9A7fOvYv7kWgO0YruGRusuY7wf874ecfjD0EVp8Fxpx52Pr-bNRpkTUbPQKic3EODqD6b2wFbkbtDuuWoda_T7ddfI0Rk3nj754SHZ_33HovcSv3M46kg9XJmvnNs33dCRFY8RCypPUTJji3G-AyhJXvGJuBD-Msa0gPEUngfMqbglyeD8_CzyMo-BJx3dGe6JTwVPL0bFuG899cI7y2D7tJwsaN-gEkaprcV9aZXquEP2-Z0OH5AVuOMi1ws_FQn04n9k9ENvcsLLBHIFU4mmTJ70R34fFX09F4FRG61rlPEZJ6PN8J87TggQMOD_sstF5OMY-RuZPdCtwK7nDZcPyAmVZSVVav3Myl2tB38U3ovf0ubdQCNdOipdvr7txochtHl0XpYwizFz-JRPJZg2M2xX0T7NNwZqqWCoXTlHWgig38HMZfNXi5Ipmj_zclnxiyRTyk30m-4tfGsmXWTtnxhM7cKrsbvDeDe0wsQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/userdelete/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"userdelete",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hobbyupdate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjhlMmU1NTk0NWIwOTg5YzZhMmUwNjg3N2YwNDNkYzI2M2RkOWVkMGU5MTFlMGEwNzFkNjJlZjFjZTMxMTZiNDk4YzJkODE1NDc2NGMwMDkiLCJpYXQiOjE2NDAyNDU0NzYsIm5iZiI6MTY0MDI0NTQ3NiwiZXhwIjoxNjcxNzgxNDc2LCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.LMzLiJQdqLUNUilv1t_lXBTex5l8-48kGpKDyS0YLO9CcTAHn4WI7w2yeh7IVqhDZc0qXrEaZuJqHNZwZSyy_Zvd0gNSFyaw1TTKfFTG-Y01DmTlR2gDVU0AgNIEnhmjiLrEO4ShIqh-yvSKv9V6U7rjz7osF4cNx3NUAezfonYDb5A1IIJSCDCdj--3smy7POfqQNdJ6ClXFh0IZY7WaQQj41MZLMSjRdogmF5SIUnMrYFq7ZUgaA7ZV43SEyeX5Mea5tdmsmBvFOkICpaBaT-I4nVdbddWuCRxeVljgeOCet8B1_0ySzniAqFhHFZe62A6cJ9ECjF5oIu7x_CeiJpgwhroEceGm3aXSZUgbnjMUvOUO5WSw87-bmlTkz_NeFMM4DDy3-L6lMUdbinMkXKwdz4H2P73_cYduDnVXvZK9-QhCRvVknQspB6Hqa39zesu5uy59i1JEqyLJc9YhhvcUpTBa9CkOC6iqQMRYZ8NGXcBzzTZprdVv0R4b2Aq8ta3bcQMpvmqDDpaPLBLm56MltT--WeHpa3HpH7YsscFQhhynlntfGgCKwF_bxOp5iaA6EavruS8IxMLJX0Hu__pBfpEuRRVdQAlT1zRujgut2dxZBQBfCPaslnfU2lXCnYZn4_mp0cb4EETNp-T7IHoYpSZ7pYBPO_yC3yoVpg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hobby",
+							"value": "playingr",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/userupdatehobby",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"userupdatehobby"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listingbyhobby",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZGY3OTc2NzUwNmYzNjIwMzFlNGJlMGVmM2FhZTUyNjJmNTBjODZiM2YwNDgxODNlM2EwMGViZjM5ZDdlMjQzYmQ1ODk0NTFhMTk3ODIxOGMiLCJpYXQiOjE2NDAyNDYyODgsIm5iZiI6MTY0MDI0NjI4OCwiZXhwIjoxNjcxNzgyMjg4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZaZrT8UYCzuWNhdiwtrA4sqCjBMLgqyJNtfV2qGujKuSZ0UswrDPI6hqNjK1Vd_QhM4U_prrBh9jkOcrU04HGID0f91tr4jqOIEMYsT8q04OwzaCEWkBggj1fWhQ8fYXSyRzeLY2YKaoZjiKFh8t2A6AkXGDVAH6FjTUaGKvh1ipUhaEO3OzklscE2adH7sx5I9A7fOvYv7kWgO0YruGRusuY7wf874ecfjD0EVp8Fxpx52Pr-bNRpkTUbPQKic3EODqD6b2wFbkbtDuuWoda_T7ddfI0Rk3nj754SHZ_33HovcSv3M46kg9XJmvnNs33dCRFY8RCypPUTJji3G-AyhJXvGJuBD-Msa0gPEUngfMqbglyeD8_CzyMo-BJx3dGe6JTwVPL0bFuG899cI7y2D7tJwsaN-gEkaprcV9aZXquEP2-Z0OH5AVuOMi1ws_FQn04n9k9ENvcsLLBHIFU4mmTJ70R34fFX09F4FRG61rlPEZJ6PN8J87TggQMOD_sstF5OMY-RuZPdCtwK7nDZcPyAmVZSVVav3Myl2tB38U3ovf0ubdQCNdOipdvr7txochtHl0XpYwizFz-JRPJZg2M2xX0T7NNwZqqWCoXTlHWgig38HMZfNXi5Ipmj_zclnxiyRTyk30m-4tfGsmXWTtnxhM7cKrsbvDeDe0wsQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hobby",
+							"value": "walking,reading",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/listingbyhobby",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"listingbyhobby"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
